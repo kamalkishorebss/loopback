@@ -1,0 +1,27 @@
+{
+  "name": "message",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "date"
+    },
+    "read_date": {
+      "type": "date"
+    },
+    "message_date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

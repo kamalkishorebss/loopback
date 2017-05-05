@@ -1,0 +1,24 @@
+{
+  "name": "PaymentFrequencies_Translations",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "paymentFrequency_Id": {
+      "type": "string"
+    },
+    "language_Id": {
+      "type": "string"
+    },
+    "text": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

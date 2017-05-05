@@ -1,0 +1,32 @@
+{
+  "name": "Currency",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "numaric_code": {
+      "type": "string"
+    },
+    "alphabatic_code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "entity": {
+      "type": "string"
+    },
+    "minor_unit": {
+      "type": "string"
+    },
+    "nativecountry_id": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

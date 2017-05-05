@@ -1,0 +1,387 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "newDatasource"
+  },
+  "AccessToken": {
+    "dataSource": "newDatasource",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "newDatasource",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "newDatasource",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "newDatasource",
+    "public": false
+  },
+  "language": {
+    "dataSource": "newDatasource",
+    "public": true
+  },
+  "gender": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "admin": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Appuser": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "FinancialEntities": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Expenses": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Incomes": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "CorporateCatalogs": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Countries": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Currency": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "page": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "ExternalSystems": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "ExternalSystem_Categories": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "usersession": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "users_external_account": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "userprofile": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "product_color": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "size": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Size_Formats": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "color": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "externalsystemcategory": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "category": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "financial_category": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "banner": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "ReferenceSuggestions": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "MovementCategories_Translations": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "MovementTypes": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Movement_Categories": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "TransactionTypes": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "PaymentMethods": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Size_Types": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Size_Values": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "ProductCategories_Translations": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Products_Translations": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Relatedness": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "FinancialCategory_Translations": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "FinancialEntity_Status": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Financial_Types": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "systemmodule": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "systemtransaction": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "systemtransactionpermission": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "activitylog": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "activity": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "user_status": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "user_role": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "message": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "PaymentFrequencies_Translations": {
+    "dataSource": "newDatasource",
+    "public": false,
+    "$promise": {},
+    "$resolved": true
+  },
+  "PaymentReminder": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "products": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "productcatalog": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "productcatagories": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "suppliers": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "supplierslinks": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Customerlinks": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "FinancialEntitieslinks": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Customer": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "External_account": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Family": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "corporation": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "financial_corportaion": {
+    "dataSource": "newDatasource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}

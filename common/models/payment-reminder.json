@@ -1,0 +1,30 @@
+{
+  "name": "PaymentReminder",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "debetor_name": {
+      "type": "string"
+    },
+    "paymentfrequency_id": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "string"
+    },
+    "firstpayment_date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

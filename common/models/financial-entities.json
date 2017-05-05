@@ -1,0 +1,81 @@
+{
+  "name": "FinancialEntities",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "surrogate_key": {
+      "type": "string"
+    },
+    "type_id": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "status_id": {
+      "type": "string"
+    },
+    "corperation_id": {
+      "type": "string"
+    },
+    "defaultcurrency_id": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "country_id": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "deleted_by": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "date"
+    },
+    "productcatalog_id": {
+      "type": "string"
+    },
+    "deleted_date": {
+      "type": "string"
+    },
+    "updated_date": {
+      "type": "date"
+    },
+    "sale_repo": {
+      "type": "string"
+    },
+    "phone_1": {
+      "type": "string"
+    },
+    "phone_2": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "catagory": {
+      "type": "string"
+    },
+    "corporation": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

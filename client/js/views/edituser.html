@@ -1,0 +1,165 @@
+<div class="row">
+<div class="col-md-12">
+	<!-- BEGIN VALIDATION STATES-->
+	<div class="portlet box purple">
+		<div class="portlet-title">
+			<div class="caption">
+				<i class="fa fa-gift"></i>Edit User
+			</div>
+			<div class="tools">
+				<a href="javascript:;" class="collapse">
+				</a>
+				<a href="#portlet-config" data-toggle="modal" class="config">
+				</a>
+				<a href="javascript:;" class="reload">
+				</a>
+				<a href="javascript:;" class="remove">
+				</a>
+			</div>
+		</div>
+		<div class="portlet-body form">
+			<!-- BEGIN FORM-->
+			<form name="myForm" id="form_sample_1" class="form-horizontal">
+				<div class="form-body">
+					<div class="alert alert-danger display-hide">
+						<button class="close" data-close="alert"></button>
+						You have some form errors. Please check below.
+					</div>
+					<div class="alert alert-success display-hide">
+						<button class="close" data-close="alert"></button>
+						Your form validation is successful!
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">First Name<span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="text" name="firstname" ng-model="eu.first_name" class="form-control"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Last Name <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="text" name="lastname" ng-model="eu.last_name" class="form-control"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Username <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="text" name="username" ng-model="eu.username" class="form-control" disabled="disabled"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Email-Address <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="email" name="email" ng-model="eu.email" class="form-control" readonly="readonly" disabled="disabled"/>
+							
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Password <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="text" name="password" ng-model="eu.password" class="form-control"/>
+							
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">D.O.B <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<!-- <input type="date" name="date_of_birth" ng-model="eu.date_of_birth" class="form-control"/> --> 
+						    <md-content>
+                             <md-datepicker name="date_of_birth" ng-model="eu.date_of_birth" md-placeholder="{{eu.date_of_birth | date}}">                 
+	                         </md-datepicker>	                         
+	                        </md-content> 
+						</div>
+					</div>
+					<div class="form-group" ng-controller="appCtrl">
+						<label class="control-label col-md-3">Language <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<select name="language" ng-model="eu.defaultlanguage_id"  class="form-control">	
+								<option value="">Select Language</option>
+								<option ng-repeat="language in all_Language" ng-selected="language.id == eu.defaultlanguage_id" value="{{language.id}}">{{language.name}}</option>
+							 </select>
+						</div>
+						
+					</div>
+					<div class="form-group" ng-controller="appCtrl">
+						<label class="control-label col-md-3">Gender <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">						
+							<select name="gender" ng-model="eu.gender_id" class="form-control">
+								<option value="">Select Gender</option>
+								<option ng-selected="eu.gender_id == '0'" value="0">Male</option>
+								<option ng-selected="eu.gender_id == '1'" value="1">Female</option>
+							 </select>
+						</div>
+
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label col-md-3">Score <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="text" name="score" ng-model="eu.score" class="form-control"/> 
+							
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Points <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="text" name="points" ng-model="eu.points" class="form-control"/> 
+							
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label col-md-3">Customer Number<span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="text" name="points" ng-model="eu.Activation_code" class="form-control"/> 
+							
+						</div>
+					</div>
+				<div class="form-actions">
+					<div class="row">
+						<div class="col-md-offset-3 col-md-9">
+							<button type="submit" class="btn green" ng-click="updateUser(eu.id)">Submit</button>
+							<a href="#/userlist" class="btn default">Cancel</a>
+						</div>
+					</div>
+				</div>
+			</form>
+			<!-- END FORM-->
+		</div>
+	</div>
+	<!-- END VALIDATION STATES-->
+</div>
+</div>
+
+<style type="text/css">
+    .ta-editor {
+  min-height: 200px;
+
+  height: auto;
+  overflow: auto;
+  font-family: inherit;
+  font-size: 100%;
+}
+</style>

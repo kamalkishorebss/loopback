@@ -1,0 +1,154 @@
+<div class="row">
+<div class="col-md-12">
+	<!-- BEGIN VALIDATION STATES-->
+	<div class="portlet box purple">
+		<div class="portlet-title">
+			<div class="caption">
+				<i class="fa fa-gift"></i>Add User
+			</div>
+			<div class="tools">
+				<a href="javascript:;" class="collapse">
+				</a>
+				<a href="#portlet-config" data-toggle="modal" class="config">
+				</a>
+				<a href="javascript:;" class="reload">
+				</a>
+				<a href="javascript:;" class="remove">
+				</a>
+			</div>
+		</div>
+		<div class="portlet-body form">
+			<!-- BEGIN FORM-->
+			<form name="myForm" id="form_sample_3" class="form-horizontal">
+				<div class="form-body">
+					<div class="alert alert-danger display-hide">
+						<button class="close" data-close="alert"></button>
+						You have some form errors. Please check below.
+					</div>
+					<div class="alert alert-success display-hide">
+						<button class="close" data-close="alert"></button>
+						Your form validation is successful!
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">First Name<span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="text" name="first_name" ng-model="customer.firstname" class="form-control"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Last Name <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="text" name="last_name" ng-model="customer.lastname" class="form-control"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Username <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="text" name="username" ng-model="customer.username" class="form-control"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Email <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="text" name="email" ng-model="customer.email" class="form-control"/>
+							
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Password <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="password" name="password" ng-model="customer.password" class="form-control"/>
+							
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">DOB <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							
+							 <md-content>
+                        
+                      <md-datepicker name="date_of_birth" ng-model="customer.myDate1" md-placeholder="Select-date">                 
+                           </md-datepicker>
+                                  
+                    </md-content>								
+							
+						</div>
+					</div>
+					<div class="form-group" ng-controller="appCtrl">
+						<label class="control-label col-md-3">Language <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<select name="defaultlanguage_id" ng-model="customer.language" class="form-control">
+								  <option value="">Choose-Language</option>
+								  <option value="{{l.id}}" ng-repeat="l in all_Language">{{l.name}}</option>
+								  
+							 </select>	
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Gender <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<select name="gender_id" ng-model="customer.gender" class="form-control">
+								  <option value="">Select-Gender</option>
+								  <option value="0">Male</option>
+								  <option value="1">Female</option>
+							 </select>	
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Score <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="number" name="score" ng-model="customer.score" class="form-control"/> 
+							
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Points <span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="number" name="points" ng-model="customer.points" class="form-control"/> 
+							
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Customer Number<span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<input type="text" name="points" ng-model="customer.authentication" class="form-control"/> 
+							
+						</div>
+					</div>
+				<div class="form-actions">
+					<div class="row">
+						<div class="col-md-offset-3 col-md-9">
+							<button type="submit" class="btn green" ng-click="addUser()">Submit</button>
+							<a href="#/userlist" class="btn default">Cancel</a>
+						</div>
+					</div>
+				</div>
+			</form>
+			<!-- END FORM-->
+		</div>
+	</div>
+	<!-- END VALIDATION STATES-->
+</div>
+</div>

@@ -1,0 +1,98 @@
+<div class="row">
+	<div class="col-md-12">
+		<!-- BEGIN EXAMPLE TABLE PORTLET-->
+		<div class="portlet box purple">
+			<div class="portlet-title">
+				<div class="caption">
+					<i class="fa fa-edit"></i>Upload Banner
+				</div>
+				<div class="tools">
+					<a href="javascript:;" class="collapse">
+					</a>
+					<a href="#portlet-config" data-toggle="modal" class="config">
+					</a>
+					<a href="javascript:;" class="reload">
+					</a>
+				</div>
+			</div>
+			<div class="portlet-body form">
+			<!-- BEGIN FORM-->
+				<form name="myForm" id="form_sample_1" class="form-horizontal">
+					<div class="form-body">
+						<div class="alert alert-danger display-hide">
+							<button class="close" data-close="alert"></button>
+							You have some form errors. Please check below.
+						</div>
+						<div class="alert alert-success display-hide">
+							<button class="close" data-close="alert"></button>
+							Your form validation is successful!
+						</div>
+						<div class="form-group">
+							<label class="control-label col-md-3">From<span class="required">
+							* </span>
+							</label>
+							<div class="col-md-8">
+							<md-datepicker name="from" ng-model="image_info.myDate1" md-placeholder="Select-date">                 
+		                         </md-datepicker>
+								<!-- <input type="date" name="date_of_birth" ng-model="customer.myDate1" class="form-control"/>  -->
+								
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-md-3">To<span class="required">
+							* </span>
+							</label>
+							<div class="col-md-8">
+								<md-datepicker name="to" ng-model="image_info.myDate2" md-placeholder="Select-date">    
+			                    </md-datepicker>									
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-md-3">Postion<span class="required">
+							* </span>
+							</label>
+							<div class="col-md-8">
+								<select name="postion" ng-model="image_info.postion"  class="form-control">	
+								<option value="">Select Postion</option>
+								<option value="Top">Top</option>
+								<option value="Bottom">Bottom</option>
+								<option value="Center">Center</option>
+								<option value="Backgound">Backgound</option>
+							   </select>								
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-md-3">Select-File<span class="required">
+							* </span>
+							</label>
+							<div class="col-md-9">
+								<input type="file" name="file" file-Model="image_info.file">
+							</div>
+						</div>
+											
+											
+						<div class="form-actions">
+							<div class="row">
+								<div class="col-md-offset-3 col-md-9 sub-btn"">
+									<button type="submit" class="btn btn-success btn-s" ng-click="upload()">
+									 <span class="glyphicon glyphicon-upload"></span>Upload</button>
+								</div>
+							</div>
+						</div>
+					</form>
+			<!-- END FORM-->
+			</div>
+			
+		</div>
+		<!-- END EXAMPLE TABLE PORTLET-->
+	</div>
+</div>
+
+<style> .sub-btn {
+    margin: 0;
+    text-align: center;
+}
+.col-md-8 {
+    width: 21.667%;
+}
+</style>

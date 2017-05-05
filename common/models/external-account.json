@@ -1,0 +1,50 @@
+{
+  "name": "External_account",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "current_flag": {
+      "type": "string"
+    },
+    "type_id": {
+      "type": "string"
+    },
+    "financialentity_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "externalsystem_id": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "string"
+    },
+    "updated_date": {
+      "type": "string"
+    },
+    "deleted_date": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "deleted_by": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

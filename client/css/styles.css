@@ -1,0 +1,69 @@
+body {
+  padding-top:50px;
+  height : auto !important;
+}
+.glyphicon-remove:hover {
+  cursor:pointer
+}
+.portlet.box > .portlet-body.add-page {
+    float: left;
+}
+.left-page {
+    width: 70%;
+    float: left;
+    padding: 10px;
+}
+.right-page {
+    width: 30%;
+    float: right;
+    padding: 14px;
+}
+
+.left-body {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+.right-body {
+    width: 50%;
+    float: right;
+    padding: 14px;
+}
+
+.addpage{
+    padding:5px;
+    width:100%;
+}
+.title-page .fa.fa-check.icon-info {
+    margin-right: 10px;
+}
+ .form-att{
+    float:left;
+    width:100%;
+}
+.input {
+    width: 100%;
+}
+.btn.blue.btn-outline {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-color: purple;
+    border-width: 1px;
+    color: purple;
+}
+.blue.btn:hover, .blue.btn:focus, .blue.btn:active, .blue.btn.active {
+    background-color: #8e5fa2 !important;
+    color: #ffffff;
+}
+.portlet-body.add-page .form-actions {
+    background: transparent;
+    border-top: none;
+}
+.portlet-body.form.add-page {
+    border: 1px solid #8e5fa2 !important;
+}
+img.logo-img {
+    width: 100%;
+}
+.toggler.tooltips.ng-scope {
+    display: none;
+}

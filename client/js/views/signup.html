@@ -1,0 +1,60 @@
+<div class="login">
+<div class="menu-toggler sidebar-toggler">
+</div>
+
+<!-- BEGIN LOGIN -->
+<div class="content">
+	
+	<!-- BEGIN REGISTRATION FORM -->
+	<form class="register-form">
+		<h3>Sign Up</h3>
+		<p class="hint">
+			 Enter your personal details below:
+		</p>
+		<div class="form-group">
+			<label class="control-label visible-ie8 visible-ie9">First Name</label>
+			<input class="form-control placeholder-no-fix" type="text" placeholder="First Name" name="firstname" ng-model="firstname"/>
+		</div>
+		<div class="form-group">
+			<label class="control-label visible-ie8 visible-ie9">Last Name</label>
+			<input class="form-control placeholder-no-fix" type="text" placeholder="Last Name" name="lastname" ng-model="lastname"/>
+		</div>
+		<div class="form-group">
+			<label class="control-label visible-ie8 visible-ie9">Username</label>
+			<input class="form-control placeholder-no-fix" type="text" placeholder="Username" name="username" ng-model="username"/>
+		</div>
+		<div class="form-group">			
+			<label class="control-label visible-ie8 visible-ie9">Email</label>
+			<input class="form-control placeholder-no-fix" type="email" placeholder="Email" name="email" ng-model="email"/>
+		</div>
+		<div class="form-group">			
+			<label class="control-label visible-ie8 visible-ie9">Password</label>
+			<input class="form-control placeholder-no-fix" type="password" placeholder="Password" name="password" ng-model="password"/>
+		</div>
+
+
+		<div class="form-actions">
+			<a id="register-back-btn" class="btn btn-default" href="#/login">Back</a>
+			<button type="submit" id="register-submit-btn" class="btn btn-success uppercase pull-right" ng-click="addAdmin()">Submit</button>
+		</div>
+	</form>
+	<!-- END REGISTRATION FORM -->
+</div>
+
+
+</div>
+
+<style>
+.login .content .register-form {
+    dislpay:block;
+}
+
+
+.page-content-wrapper .page-content {
+margin-left: 0px !important;
+margin-top: 0;
+min-height: 600px;
+padding: 25px 20px 10px;
+}
+
+</style>

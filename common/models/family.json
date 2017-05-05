@@ -1,0 +1,47 @@
+{
+  "name": "Family",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "gender": {
+      "type": "string"
+    },
+    "relation": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "users_id": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "string"
+    },
+    "update_date": {
+      "type": "string"
+    },
+    "deleted_date": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "deleted_by": {
+      "type": "string"
+    },
+    "profile_pic": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Customerlinks",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "currentflag_id": {
+      "type": "string"
+    },
+    "financialentity_id": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "delete_by": {
+      "type": "string"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "deleted_date": {
+      "type": "date"
+    },
+    "updated_date": {
+      "type": "date"
+    },
+    "created_date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

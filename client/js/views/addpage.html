@@ -1,0 +1,94 @@
+<div class="row">
+<div class="col-md-12">
+	<!-- BEGIN VALIDATION STATES-->
+	<div class="portlet box purple">
+		<div class="portlet-title">
+			<div class="caption">
+				<i class="fa fa-gift"></i>Add Page
+			</div>
+			<div class="tools">
+				<a href="javascript:;" class="collapse">
+				</a>
+				<a href="#portlet-config" data-toggle="modal" class="config">
+				</a>
+				<a href="javascript:;" class="reload">
+				</a>
+			</div>
+		</div>
+		<div class="portlet-body form add-page">
+			<!-- BEGIN FORM-->
+			<form name="myForm" id="form_sample_1" class="form-horizontal">
+				<div class="form-body">
+					<div class="alert alert-danger display-hide">
+						<button class="close" data-close="alert"></button>
+						You have some form errors. Please check below.
+					</div>
+					<div class="alert alert-success display-hide">
+						<button class="close" data-close="alert"></button>
+						Your form validation is successful!
+					</div>
+
+					<div class="left-page">
+					    <label class="addpage title">
+		                  <span class="form-att">Title</span>
+		                  <input class="input page_title" name="title" ng-model="page.title" type="text">            
+		                </label>
+					    <!-- <label class="addpage slug">
+		                  <span class="form-att">Slug/Url</span>
+		                  <input class="input page_slug" name="slug" ng-model="slug" type="text">            
+		                </label> -->
+						
+						<label class="addpage description">
+							<label>Description</label>
+							<div text-angular="text-angular" name="description" ng-model="page.htmlcontent" ></div>
+						</label>
+						
+					</div>
+					
+
+
+
+					<div class="right-page">
+					    
+						<!-- <label class="addpage parent">
+						   <span class="form-att">Parent Page</span>
+							 <select class="select input">
+							 <option value="">No Parent</option>
+								  <option value="{{t.parentTitle}}"  ng-repeat="t in parentTitle">{{t}}</option>				 
+							 </select>
+							
+						</label> -->
+					
+						<label class="addpage status">
+						    <span class="form-att">Status</span>
+							 <select name="status" ng-model="page.status" class="select input">
+								  <option value="">--Select--</option>
+								  <option value="Active">Active</option>
+								  <option value="Suspended">Suspended</option>
+							 </select>							
+						</label><br><br><br>	
+						
+                        <label class="addpage submit-but">
+							<input class="input submit btn blue btn-outline" name="submit" value="Submit" type="submit" ng-click="addPage()">
+						</label>
+						
+					</div>					
+				
+			</form>
+			<!-- END FORM-->
+		</div>
+	</div>
+	<!-- END VALIDATION STATES-->
+</div>
+</div>
+
+<style type="text/css">
+    .ta-editor {
+  min-height: 200px;
+
+  height: auto;
+  overflow: auto;
+  font-family: inherit;
+  font-size: 100%;
+}
+</style>

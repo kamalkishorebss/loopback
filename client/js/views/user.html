@@ -1,0 +1,305 @@
+<div class="row">
+<style type="text/css">
+	.profile-sidebar-portlet {
+    padding: 15px 0 15px !important;
+}
+.caption-subject.font-blue-madison.bold.uppercase {
+    float: left;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+}
+#msg{
+	background-color: #8e5fa2;
+    margin-left: 100px;
+    margin-top: 5px;
+    color: white;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    position: relative;
+}
+
+/* The Close Button */
+.close {
+        color: #aaaaaa;
+    right: 6px;
+    top: 6px;
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    opacity: 1 !important;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#sendmsg{
+	margin-left:70px;
+
+}
+
+</style>
+<div class="row">
+	<div class="col-md-12">
+		<!-- BEGIN PROFILE SIDEBAR -->
+		<div class="profile-sidebar">
+            <!-- PORTLET MAIN -->
+            
+            <div class="portlet light profile-sidebar-portlet">
+            <div class="portlet-title">
+				
+				<i class="icon-bar-chart theme-font hide"></i>
+				<span class="caption-subject font-blue-madison bold uppercase">User Profile</span>
+				
+			</div>
+            
+                <!-- SIDEBAR USERPIC -->
+                <div class="profile-userpic">
+                    <img src="/img/img-2.jpg" class="img-responsive" alt="">
+                </div>
+                <button class="btn btn success" id="msg">Message</button>
+                <!-- END SIDEBAR USERPIC -->
+                <!-- SIDEBAR USER TITLE -->
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        {{singleUser.username}}                          
+                    </div>
+                    <hr>
+                    <div class="profile-usertitle-job">
+                        {{singleUser.email}} 
+                    </div>
+                    <hr>
+                    <div class="profile-usertitle-dob">
+                        <h5><b>DOB</b>: {{singleUser.date_of_birth |date}}</h5> 
+                    </div>
+                    <hr>
+                    <div class="profile-usertitle-points">
+                        <h5><b>Points</b>: {{singleUser.points}}</h5> 
+                    </div>
+                    <hr>                   
+                    <div class="profile-usertitle-gender" ng-if="singleUser.gender_id==0">
+                        <h5><b>Gender</b>: Male</h5> 
+                    </div>
+                    <div class="profile-usertitle-gender" ng-if="singleUser.gender_id==1">
+                        <h5><b>Gender</b>: Female</h5> 
+                    </div>
+                </div>
+                <!-- END SIDEBAR USER TITLE -->
+            </div>
+        </div>				
+		
+		<div class="col-md-4">
+			<!-- BEGIN PORTLET -->
+			<div class="portlet light ">
+				<div class="portlet-title">
+					<div class="caption caption-md">
+						<i class="icon-bar-chart theme-font hide"></i>
+						<span class="caption-subject font-blue-madison bold uppercase">Team</span>
+						
+					</div>
+					
+				</div>
+				<div class="portlet-body">
+					
+				</div>
+			</div>
+									<!-- END PORTLET -->
+		</div>
+		<div class="col-md-4">
+			<!-- BEGIN PORTLET -->
+			<div class="portlet light ">
+				<div class="portlet-title">
+					<div class="caption caption-md">
+						<i class="icon-bar-chart theme-font hide"></i>
+						<span class="caption-subject font-blue-madison bold uppercase">Family</span>
+						
+					</div>
+					
+				</div>
+				<div class="portlet-body">
+					
+					<div class="table-scrollable table-scrollable-borderless">
+						
+					</div>
+				</div>
+			</div>
+									<!-- END PORTLET -->
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="col-md-4">
+					<!-- BEGIN PORTLET-->
+					<div class="portlet light">
+						<div class="portlet-title">
+							<div class="caption caption-md">
+								<i class="icon-bar-chart theme-font hide"></i>
+								<span class="caption-subject theme-font bold uppercase">User Messages</span>								
+							</div>
+							<div class="inputs">
+								
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="scroller" style="height: 350px; overflow-y:scroll;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
+								<div class="general-item-list">
+									<div class="item" ng-repeat="message in messages">
+										<div class="item-head">
+											<div class="item-details" style="float: right">				
+												<span class="item-label">{{message.status}}</span>
+											</div>									
+										</div>
+										<div class="item-body">{{message.message}}
+										</div>
+										<!-- <a href="" class="item-name primary-link" style="float: right">View</a> -->
+										<a class="item-name primary-link" style="float: right" ng-click="delMsg(message.id)">Delete/</a>
+									</div>								
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END PORTLET-->
+				</div>
+	</div>
+</div>
+
+
+<!-- modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <div class="portlet box purple">
+		<div class="portlet-title">
+			<div class="caption">
+				<i class="fa fa-gift"></i>Send Message
+			</div>
+			<div class="tools">				
+			</div>
+		</div>
+		<div class="portlet-body form">
+			<!-- BEGIN FORM-->
+			<form name="myForm" id="form_sample_3" class="form-horizontal">
+				<div class="form-body">
+					<div class="alert alert-danger display-hide">
+						<button class="close" data-close="alert"></button>
+						You have some form errors. Please check below.
+					</div>
+					<div class="alert alert-success display-hide">
+						<button class="close" data-close="alert"></button>
+						Your form validation is successful!
+					</div>
+					<div class="form-group">
+							<label class="control-label col-md-3">Future Date<span class="required">
+							* </span>
+							</label>
+							<div class="col-md-8">
+							<div class="input-group" moment-picker="ctrl.datepicker" format="YYYY-MM-DD">
+							    <span class="input-group-addon">
+							        <i class="octicon octicon-calendar"></i>
+							    </span>
+							    <input class="form-control"
+							           placeholder="Select a date"
+							           ng-model="ctrl.datepicker"
+							           ng-model-options="{ updateOn: 'blur' }">
+							</div>
+							
+							</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Future Time<span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<div class="input-group" moment-picker="ctrl.timepicker"
+							     format="HH:mm:ss">
+							    <span class="input-group-addon">
+							        <i class="octicon octicon-clock"></i>
+							    </span>
+							    <input class="form-control" ng-model="ctrl.timepicker"
+							           ng-model-options="{ updateOn: 'blur' }" name="future_time">
+							</div>
+				       </div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3">Message<span class="required">
+						* </span>
+						</label>
+						<div class="col-md-8">
+							<textarea rows="4" cols="50" type="text" name="message" ng-model="message" class="form-control">
+							</textarea>							
+						</div>
+					</div>
+
+					
+					
+				<div class="form-actions">
+					<div class="row">
+						<div class="col-md-offset-3 col-md-9">
+							<button type="submit" class="btn green" ng-click="Message()" id="sendmsg">Send</button>							
+						</div>
+					</div>
+				</div>
+			</form>
+			<!-- END FORM-->
+		</div>
+	</div>
+	<!-- END VALIDATION STATES-->
+  </div>
+</div>
+
+<!-- message Model -->
+
+
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("msg");
+var span = document.getElementsByClassName("close")[0]; 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>

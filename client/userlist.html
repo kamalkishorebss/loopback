@@ -1,0 +1,135 @@
+<div class="row">
+	<div class="col-md-12">
+		<!-- BEGIN EXAMPLE TABLE PORTLET-->
+		<div class="portlet box purple">
+			<div class="portlet-title">
+				<div class="caption">
+					<i class="fa fa-edit"></i>Users
+				</div>
+				
+				<div class="tools">
+					<a href="javascript:;" class="collapse">
+					</a>
+					<a href="#portlet-config" data-toggle="modal" class="config">
+					</a>
+					<a href="javascript:;" class="reload">
+					</a>
+				</div>
+			</div>
+			<div class="portlet-body">
+				<div class="table-toolbar">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="btn-group">
+								<a id="sample_editable_1_new" class="btn green" href="#/user">
+								Add New <i class="fa fa-plus"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-6">
+						 <input type="text" name="search" ng-model="search" class="search" placeholder="Search here...">		 
+							<div class="btn-group pull-right">
+								<button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
+								</button>
+								<ul class="dropdown-menu pull-right">
+									<li>
+										<a href="javascript:;">
+										Print </a>
+									</li>
+									<li>
+										<a href="#" id="btn">
+										Save as PDF </a>
+									</li>
+									<li>
+										<a href="javascript:;">
+										Export to Excel </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+				<thead>
+				<tr>
+					<th>
+						  First Name
+					</th>
+					<th>
+						  Last Name
+					</th>
+					<th>
+						  Username
+					</th>
+					<th>
+						  Email
+					</th>
+					<th>
+						 Actions
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr ng-repeat="u in Users | filter : search">
+					<td>
+						
+						{{u.first_name}}
+					</td>
+					<td>
+						 {{u.last_name}}
+					</td>
+					<td>
+						 {{u.username}}
+						
+					</td>
+					<td>
+					    <a class="name" ng-click="userProfile(u.id)">
+						 {{u.email}}
+						</a>
+					</td>
+
+					<td>
+						<a class="edit btn default btn-xs purple" ng-click="userById(u.id)">
+							<i class="fa fa-edit"></i>
+							Edit 
+						</a>					
+						<a class="btn default btn-xs black delete" ng-click="deleteUser(u.id)">
+							<i class="fa fa-trash-o"></i>
+							Delete 
+						</a>
+					</td>
+				</tr>
+				
+				</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- END EXAMPLE TABLE PORTLET-->
+		<!-- <pagination page="currentPage" max-size="noOfpages" total-items="totalItems" items-per-page="10"> </pagination>
+	</div> -->
+</div>
+
+<style type="text/css">
+	input {
+    margin-left: 170px;
+}
+</style>
+<script>
+var doc = new jsPDF();
+var specialElementHandlers = {
+'#editor': function (element, renderer) {
+return true;
+}
+};
+
+$(document).ready(function() {
+$('#btn').click(function () {
+doc.fromHTML($('#sample_editable_1').html(), 15, 15, {
+'width': 170,
+'elementHandlers': specialElementHandlers
+});
+doc.save('sample-content.pdf');
+});
+});
+</script>

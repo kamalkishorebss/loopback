@@ -1,0 +1,29 @@
+{
+  "name": "Countries",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "phone_countrycode": {
+      "type": "string"
+    },
+    "numaric_code": {
+      "type": "string"
+    },
+    "alpha2_code": {
+      "type": "string"
+    },
+    "alpha3_code": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

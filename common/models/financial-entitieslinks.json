@@ -1,0 +1,47 @@
+{
+  "name": "FinancialEntitieslinks",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "surrogate_key": {
+      "type": "string"
+    },
+    "currentflag_id": {
+      "type": "string"
+    },
+    "users_id": {
+      "type": "string"
+    },
+    "userprofile_id": {
+      "type": "string"
+    },
+    "relatedness_id": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "deleted_by": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "date"
+    },
+    "updated_date": {
+      "type": "date"
+    },
+    "deleted_date": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Customer",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "current_flag": {
+      "type": "string"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "deleted_by": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "gender_id": {
+      "type": "string"
+    },
+    "cellphone_number": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "any"
+    },
+    "deleted_date": {
+      "type": "any"
+    },
+    "updated_date": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

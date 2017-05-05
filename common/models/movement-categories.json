@@ -1,0 +1,21 @@
+{
+  "name": "Movement_Categories",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "surrogate_key": {
+      "type": "string"
+    },
+    "movementype_id": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

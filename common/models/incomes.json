@@ -1,0 +1,60 @@
+{
+  "name": "Incomes",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "current_flag": {
+      "type": "string"
+    },
+    "financialentity_id": {
+      "type": "string"
+    },
+    "movementtype_id": {
+      "type": "string"
+    },
+    "transaction_id": {
+      "type": "string"
+    },
+    "category_id": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "expense_id": {
+      "type": "string"
+    },
+    "color_code": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "date"
+    },
+    "deleted_date": {
+      "type": "date"
+    },
+    "updated_date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,111 @@
+<div class="row">
+	<div class="col-md-12">
+		<!-- BEGIN EXAMPLE TABLE PORTLET-->
+		<div class="portlet box purple">
+			<div class="portlet-title">
+				<div class="caption">
+					<i class="fa fa-edit"></i>Banner Manager
+				</div>
+				<div class="tools">
+					<a href="javascript:;" class="collapse">
+					</a>
+					<a href="#portlet-config" data-toggle="modal" class="config">
+					</a>
+					<a href="javascript:;" class="reload">
+					</a>
+				</div>
+			</div>
+			<div class="portlet-body">
+				<div class="table-toolbar">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="btn-group">
+								<a id="sample_editable_1_new" class="btn green" href="#/upload_image">
+								Add New <i class="fa fa-plus"></i>
+								</a>
+							</div>
+						</div>
+						<!-- <div class="col-md-6">
+							<div class="btn-group pull-right">
+								<button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
+								</button>
+								<ul class="dropdown-menu pull-right">
+									<li>
+										<a href="javascript:;">
+										Print </a>
+									</li>
+									<li>
+										<a href="javascript:;">
+										Save as PDF </a>
+									</li>
+									<li>
+										<a href="javascript:;">
+										Export to Excel </a>
+									</li>
+								</ul>
+							</div>
+						</div> -->
+					</div>
+				</div>
+
+				<table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+				<thead>
+				<tr>
+					<th>
+						  #
+					</th>
+					<th>
+						  Banner
+					</th>
+					<th>
+						  From
+					</th>					
+					<th>
+						  To
+					</th>
+					<th>
+						  Location
+					</th>  
+					<th>
+						 Actions
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr ng-repeat="img in images">
+					<td>
+						
+						{{$index + 1}}
+					</td>
+					<td>
+						<a href="#/bannerView" ng-click="viewImage(img.id)">{{img.name}}</a> 
+					</td>
+					<td>
+					     {{img.from | date}}
+						 
+					</td>
+					<td>
+						{{img.to | date}}
+					</td>
+					<td>
+						{{img.postion}}
+					</td>					
+					<td>
+						<a class="edit btn default btn-xs purple" ng-click="imageById(img.id)">
+							<i class="fa fa-edit"></i>
+							Edit 
+						</a>					
+						<a class="btn default btn-xs black delete" ng-click="deleteImage(img.id)">
+							<i class="fa fa-trash-o"></i>
+							Delete 
+						</a>
+					</td>
+				</tr>
+				
+				</tbodypl
+				</table>
+			</div>
+		</div>
+		<!-- END EXAMPLE TABLE PORTLET-->
+	</div>
+</div>

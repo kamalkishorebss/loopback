@@ -1,0 +1,39 @@
+{
+  "name": "supplierslinks",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "currentflag_id": {
+      "type": "string"
+    },
+    "financialentity_id": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "updeated_by": {
+      "type": "string"
+    },
+    "deleted_by": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "date"
+    },
+    "updated_date": {
+      "type": "date"
+    },
+    "deleted_date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

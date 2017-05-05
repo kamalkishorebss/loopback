@@ -1,0 +1,51 @@
+{
+  "name": "productcatalog",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "created_by": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "date"
+    },
+    "deleted_by": {
+      "type": "string"
+    },
+    "current_flag": {
+      "type": "string"
+    },
+    "deleted_date": {
+      "type": "date"
+    },
+    "surrogate_key": {
+      "type": "string"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "iscorprate_catalog": {
+      "type": "string"
+    },
+    "updated_date": {
+      "type": "date"
+    },
+    "Corporation_ID": {
+      "type": "string"
+    },
+    "FinancialEntity_ID": {
+      "type": "string"
+    },
+    "ProductCatalog_ID": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

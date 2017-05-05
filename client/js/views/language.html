@@ -1,0 +1,104 @@
+<div class="row">
+<div class="col-md-12">
+	<!-- BEGIN VALIDATION STATES-->
+	<div class="portlet box purple">
+		<div class="portlet-title">
+			<div class="caption">
+				<i class="fa fa-gift"></i>Languages
+			</div>
+			<div class="tools">
+				<a href="javascript:;" class="collapse">
+				</a>
+				<a href="#portlet-config" data-toggle="modal" class="config">
+				</a>
+				<a href="javascript:;" class="reload">
+				</a>
+			</div>
+		</div>
+		<div class="portlet-body form add-page">
+
+					<div class="left-body">
+					    <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+							<thead>
+							<tr>
+								<th>
+									  #
+								</th>
+								<th width="300">
+									  Language
+								</th>
+												
+								<th width="600">
+									 Actions
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr ng-repeat="l in all_Language">
+								<td>
+									
+									{{$index+1}}
+								</td>
+								<td>
+									{{l.name}}
+									
+								</td>
+								<td>
+									<!-- <a class="edit btn default btn-xs purple" ng-click="editPage(pl.id)">
+										<i class="fa fa-edit"></i>
+										Edit 
+									</a>	 -->				
+									<a class="btn default btn-xs black delete" ng-click="deleteLan(l.id)">
+										<i class="fa fa-trash-o"></i>
+										Delete 
+									</a>
+								</td>
+							</tr>
+							
+							</tbody>
+							</table>
+					</div>
+					
+
+
+
+					<div class="right-body">
+					 <form name="myForm" id="form_sample_1" class="form-horizontal">
+						<div class="form-body">
+							<div class="alert alert-danger display-hide">
+								<button class="close" data-close="alert"></button>
+								You have some form errors. Please check below.
+							</div>
+							<div class="alert alert-success display-hide">
+								<button class="close" data-close="alert"></button>
+								Your form validation is successful!
+							</div>		    
+							
+								<label class="addpage title">
+				                  <span class="form-att">Language</span>
+				                  <input class="input page_Gender" name="name" ng-model="name" type="text">            
+				                </label><br><br><br>	
+								
+		                        <label class="addpage submit-but">
+									<input class="input submit btn blue btn-outline" name="submit" value="Add" type="submit" ng-click="addLanguage()">
+								</label>
+								
+						</div>
+					</form>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<style type="text/css">
+    .ta-editor {
+  min-height: 200px;
+
+  height: auto;
+  overflow: auto;
+  font-family: inherit;
+  font-size: 100%;
+}
+</style>

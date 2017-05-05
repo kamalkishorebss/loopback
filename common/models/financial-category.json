@@ -1,0 +1,20 @@
+{
+  "name": "financial_category",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "financialtype_id": {
+      "type": "string"
+    },
+    "enablelrepo_code": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

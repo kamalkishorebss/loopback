@@ -1,0 +1,12 @@
+{
+  "ids": {
+    "ManagerHost": 4,
+    "LoadBalancer": 2
+  },
+  "models": {
+    "ManagerHost": {},
+    "LoadBalancer": {
+      "1": "{\"protocol\":\"http\",\"host\":\"http://35.161.70.128\",\"port\":46455,\"id\":1}"
+    }
+  }
+}

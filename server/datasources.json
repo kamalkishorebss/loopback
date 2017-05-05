@@ -1,0 +1,21 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "newDatasource": {
+    "host": "genteranfapp.ctizgtgiumxk.us-west-2.rds.amazonaws.com",
+    "port": 5432,
+    "database": "gentera",
+    "password": "genteranfapp",
+    "name": "newDatasource",
+    "user": "genteranfapp",
+    "connector": "postgresql"
+  },
+  "twilio": {
+    "name": "twilio",
+    "connector": "loopback-connector-twilio",
+    "accountSid": "AC0a3b4465f6febe0c8ccf02ba5db23089",
+    "authToken": "805f61f6bb886b089ef2ff41f919941c"
+  }
+}

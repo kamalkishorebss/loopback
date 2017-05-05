@@ -1,0 +1,72 @@
+{
+  "name": "products",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "surrogate_key": {
+      "type": "string"
+    },
+    "current_flag": {
+      "type": "string"
+    },
+    "productcatalog_id": {
+      "type": "string"
+    },
+    "productcatagory_id": {
+      "type": "string"
+    },
+    "sale_price": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "picture": {
+      "type": "string"
+    },
+    "barcode": {
+      "type": "string"
+    },
+    "isdifferent_colors": {
+      "type": "string"
+    },
+    "isdifferent_sizes": {
+      "type": "string"
+    },
+    "iscorprate_product": {
+      "type": "string"
+    },
+    "delete_date": {
+      "type": "string"
+    },
+    "updated_date": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "deleted_by": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

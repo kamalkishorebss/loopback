@@ -1,0 +1,38 @@
+{
+  "name": "usersession",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "network_type": {
+      "type": "string"
+    },
+    "device_id": {
+      "type": "string"
+    },
+    "device_type": {
+      "type": "string"
+    },
+    "cellphone_number": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

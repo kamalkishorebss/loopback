@@ -1,0 +1,62 @@
+{
+  "name": "Expenses",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "surrogate_key": {
+      "type": "string"
+    },
+    "current_flag": {
+      "type": "string"
+    },
+    "financialentity_id": {
+      "type": "string"
+    },
+    "transcation_id": {
+      "type": "string"
+    },
+    "movementtype_id": {
+      "type": "string"
+    },
+    "category_id": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "deleted_by": {
+      "type": "string"
+    },
+    "updated_date": {
+      "type": "date"
+    },
+    "deleted_date": {
+      "type": "date"
+    },
+    "created_date": {
+      "type": "date"
+    },
+    "refernce": {
+      "type": "string"
+    },
+    "ammount": {
+      "type": "string"
+    },
+    "expense_date": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

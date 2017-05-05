@@ -1,0 +1,26 @@
+{
+  "name": "color",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "RGB": {
+      "type": "string"
+    },
+    "Hue": {
+      "type": "string"
+    },
+    "saturation": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

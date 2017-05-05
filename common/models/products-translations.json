@@ -1,0 +1,27 @@
+{
+  "name": "Products_Translations",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "language_id": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

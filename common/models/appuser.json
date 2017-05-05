@@ -1,0 +1,92 @@
+{
+  "name": "Appuser",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "role_id": {
+      "type": "string"
+    },
+    "status_id": {
+      "type": "string"
+    },
+    "Activation_code": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "points": {
+      "type": "string"
+    },
+    "lastconnection_date": {
+      "type": "string"
+    },
+    "gender_id": {
+      "type": "string"
+    },
+    "score": {
+      "type": "string"
+    },
+    "defaultlanguage_id": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "login_type": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "deleted_by": {
+      "type": "string"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "string"
+    },
+    "deleted_date": {
+      "type": "string"
+    },
+    "updated_date": {
+      "type": "string"
+    },
+    "profile_image": {
+      "type": "string"
+    },
+    "category_id": {
+      "type": "string"
+    },
+    "currency_id": {
+      "type": "string"
+    },
+    "current_flag": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

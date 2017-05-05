@@ -1,0 +1,21 @@
+{
+  "name": "systemtransactionpermission",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "systemtransaction_id": {
+      "type": "string"
+    },
+    "userprofile_id": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

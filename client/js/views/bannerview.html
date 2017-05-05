@@ -1,0 +1,55 @@
+<div class="row">
+	<div class="col-md-12">
+			<!-- BEGIN EXAMPLE TABLE PORTLET-->
+		<div class="portlet box purple">
+			<div class="portlet-title">
+				<div class="caption about-text title-page">
+					<h4>
+						<i class="fa fa-check icon-info"></i>BannerView
+					</h4>
+				</div>
+			</div>
+			<div class="portlet-body">
+				<div class="table-toolbar">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="img-class">{{imageInfo.name}}
+									<img src="https://genteranfa.s3-us-west-2.amazonaws.com/{{imageInfo.name}}">
+							</div>	
+							
+						</div>
+						
+					</div>
+					<div class="row">
+					<!-- <style type="text/css">
+					.detail{
+						padding: 15px 0 0 !important;
+					}
+					
+					</style> -->
+						<div class="col-md-12">
+							<div class="detail-from">
+                             <h5><b>From</b>: {{imageInfo.from |date}}</h5> 
+                            </div>
+                            <div class="detail-to">
+                             <h5><b>To</b>: {{imageInfo.to |date}}</h5> 
+                            </div>
+                            <div class="detail-postion">
+                             <h5><b>Postion</b>: {{imageInfo.postion}}</h5> 
+                            </div>
+                           			
+						</div>
+				</div>
+
+				
+			</div>
+		</div>
+		<!-- END EXAMPLE TABLE PORTLET-->
+	</div>
+</div>
+<style type="text/css">
+	.img-class{
+	width: 35.667%;
+	height: 35.667%;
+}
+</style>
